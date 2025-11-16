@@ -15,6 +15,7 @@ export default function Header({ toggleSidebar }) {
         <Link href="/" aria-label="home" className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">K</span>
+          
           </div>
           <span className="text-2xl font-bold text-gray-800 hidden md:inline">KidsEdu</span>
         </Link>
@@ -26,6 +27,15 @@ export default function Header({ toggleSidebar }) {
               type="text" 
               placeholder="Quick find courses/activities..." 
               className="w-full pl-10 pr-4 py-2 rounded-full bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+        {/* Auth Buttons */}
+        <div className="hidden md:flex items-center space-x-4">
+          <Link href="/login" className="text-gray-700 hover:text-gray-900 px-3 py-1 text-sm font-medium">
+            Sign In
+          </Link>
+          <Link href="/signup" className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-full text-sm font-medium">
+            Sign Up
+          </Link>
+        </div>
             />
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
           </div>
