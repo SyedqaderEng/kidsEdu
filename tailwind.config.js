@@ -1,9 +1,13 @@
 module.exports = {
+  darkMode: 'class', // enable dark mode
+
   content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
   theme: {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+          poppins: ['Poppins', 'sans-serif'],
+          quicksand: ['Quicksand', 'sans-serif'],
       },
       colors: {
         primary: {
