@@ -1,0 +1,142 @@
+Analysis of Aikido.dev’s Design
+
+I explored the site and these are the major design components, layout patterns, and style characteristics:
+1. Global Page Structure / Layout
+Header / Navigation Bar
+Logo on the left.
+Primary navigation links (“Platform”, “Solutions”, “By Use Case”, etc.).
+Secondary links: “Pricing”, “Contact”, “Login”, “Start for Free”.
+Language selector (“EN FR JP DE PT”) — localized site.
+Clean horizontal nav bar, likely sticky or fixed.
+Hero / Banner Section (Above the Fold)
+Big headline (“Secure everything, Compromise nothing.”) + sub‑headline.
+Primary CTA (Call to Action) buttons (e.g., “Start for Free”, “Book a demo”).
+Trust / social proof line (“Trusted by 50k+ orgs | Loved by 100k+ devs”)
+Images: multiple layered or floating images (or graphics) — they seem to use a grid of “cards” or boxed images (maybe a carousel or static grid).
+Features / Solutions Section
+A set of cards / tiles listing “By Scanner” (SAST, SCA, Secrets, etc.).
+Another set “By Use Case” and “By Feature” and “By Stage / Industry” — organized in a tile or grid layout.
+Value Proposition / How It Works Section
+Descriptive content about how Aikido contextualizes vulnerabilities, reduces noise, filters false positives.
+Likely “feature + image” or “text + image” alignment.
+Trust / Compliance Section
+Mentions of trust center, SOC 2, ISO 27001 — building credibility.
+Likely icons or badges for compliance.
+Deep Feature / Behavior Explanation
+Auto‑fix, auto-triage, custom rules.
+This is often presented with icons + text + maybe flow diagrams or visuals of UI.
+Integration Section
+Logos of integrations (GitHub, Bitbucket, Jira, VSCode, etc.) — horizontally aligned icons.
+Very common for SaaS: show what tools they support.
+Testimonials / Customer Stories Section
+Real user quotes, names, titles, possibly company logos.
+Probably laid out in a carousel or grid.
+Footer
+Important links: Docs, Trust Center, Integrations, About, Careers, Blog, Pricing, Contact.
+Social links: YouTube, LinkedIn, X (Twitter).
+Copyright / brand.
+Design Style Characteristics
+Typography:
+The font is very clean, modern sans-serif.
+Hierarchy: large headline, smaller sub‑headline, smaller body.
+Probably limited font weights for clarity.
+Color Palette:
+Primarily minimal / neutral (white background, dark text).
+Accent colors for buttons or call to action.
+Use of subtle colors in icons / graphics.
+Imagery & Graphics:
+Use of abstract or techy illustrations / images (possibly custom).
+Icons for features (SAST, SCA, etc.).
+Integration logos are in monochrome or colored, depending.
+White Space / Padding:
+Generous padding between sections.
+Enough whitespace so that each section “breathes.”
+Visual Hierarchy:
+Hero section is dominant.
+Feature tiles are clearly separated.
+Integration logos are visually smaller but grouped.
+Interactivity:
+Buttons with hover states.
+The nav likely collapses or changes on mobile.
+Possibly scroll-based animations / reveals (hard to tell without dev tools).
+Responsiveness:
+The layout is likely responsive (since it’s a modern SaaS site).
+Component Breakdown (What You Need to Design)
+Based on the above, here are all the components / design elements you’d need to build a similar theme:
+Header / Nav Component
+Logo
+Primary nav links (multi-level maybe)
+Secondary nav (Pricing / Contact / Login)
+CTAs in header (“Start for Free”)
+Language selector
+Hero / Banner Component
+Headline + Subheadline
+Call-to-action buttons (primary + secondary)
+Trust line (text + optional icons)
+Hero illustration / image(s)
+Feature / Solution Card Component
+Card with title, description, optional icon
+Possibly clickable to “Learn more”
+Grid layout for multiple cards
+Use-Case / Feature / Stage Section
+Same as feature cards but categorized by use-case or stage
+Tabs or segmented control (if switching between different categories)
+Value / Benefit Section
+Text block + image / illustration
+Alternating layout (image left + text right, then reverse) — common pattern
+Badges (SOC 2, ISO, etc.)
+Short text explaining compliance
+Possibly a “Learn more” linking to Trust Center
+Auto‑Fix / Behavior / Workflow Section
+Step-by-step component (maybe horizontal or vertical)
+Icons for each step: Auto-fix, Triage, Custom Rules
+Descriptive text
+Integration Logos Section
+Grid or row of integration logos
+Each logo clickable (maybe)
+Consistent sizing, alignment
+Testimonials / Customer Stories
+Quote + Name + Role + Company Logo
+Card or carousel layout
+Navigation links (grouped by category)
+Social media icons
+Secondary links (Privacy, Terms, etc.)
+Copyright notice
+Global Components / Utilities
+Button styles (primary, secondary)
+Typography styles (H1, H2, body, small)
+Color palette / theme variables
+Form components (if needed)
+Responsive breakpoints
+Icons / icon set
+Possibly alert / banner components (for announcements)
+Design System / Tools Recommendation
+To design a similar theme, you can use:
+Figma (or Sketch / Adobe XD) to design all these components as a design system.
+Create a component library with:
+Buttons
+Cards
+Icons
+Typography Styles
+Layout constraints (Auto-Layout in Figma)
+Define a spacing scale (e.g., 8px, 16px, 24px, etc.) for consistent padding/margins.
+Define color tokens (primary, secondary, background, text, etc.).
+Use a UI framework (if building) — e.g., React + Tailwind CSS or Chakra UI or Material UI — to implement these.
+Suggested Workflow to Recreate the Theme
+Audit the Current Site
+Take screenshots of all sections.
+Use browser dev tools to inspect spacing, font sizes, and colors.
+Note down all the distinct section types.
+Wireframe / Layout
+Sketch high-level wireframes for each major section: hero, features, integrations, footer, etc.
+Define how many cards per row, how sections stack on mobile, etc.
+Design in Figma
+Build a design system file: typography, colors, grid, spacing.
+Design components: cards, buttons, nav, hero, etc.
+Assemble the page using the components.
+Prototype / Review
+Create a clickable prototype to review flows and layout.
+Get feedback on spacing, readability, visual balance.
+Handoff / Build
+Export design tokens to CSS / code (if using something like Tailwind, you can set design tokens in tailwind.config.js).
+Build the components in your stack (React, Vue, etc.).
